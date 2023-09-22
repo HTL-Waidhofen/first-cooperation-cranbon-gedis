@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Bilder/icon.ico">
     <style>
-        
+        table{
+            border:5px solid rgb(161, 152, 72); 
+            position: relative;
+            left: 42%;
+            font-size: 20pt;
+        }
+        th{
+            width: 300px;
+        }
+        h1{
+            font-size: 34pt;
+        }
+        tr:nth-child(odd) {
+            background-color: #6a879e;
+        }
+        .tdOdd{
+            background-color: #b4c4cf;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        .ahell{
+            color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -20,6 +43,21 @@
         <a href="produkte.html" class="banner-button">Produkte</a>
         <a href="kunden.html" class="banner-button">Kunden</a>
     </div>
-    
+    <h1>Team Members</h1>
+    <table>
+        <tr>
+            <th><a href="" class="ahell" onclick="">Gabriel Deiac</a></th>
+        </tr>
+        <tr>
+            <th><a href="">Forstner Kevin</a></th>
+        </tr>
+        <tr>
+            <th><a href="" class="ahell">Laurenz Berchtold</a></th>
+        </tr>
+        <tr>
+            <th><a href="">Julain Halbmayr</a></th>
+        </tr>
+    </table>
+    <div id="info"></div>
 </body>
 </html>
