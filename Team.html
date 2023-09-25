@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
-    <script src="script.js"></script>
+    <title>Gedi - Gabriel Deiac</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Bilder/icon.ico">
+    <script src="./script.js"></script>
+    <style>
+        table{
+            border:5px solid rgb(161, 152, 72); 
+            position: relative;
+            left: 42%;
+            font-size: 20pt;
+        }
+        th{
+            width: 300px;
+        }
+        h1{
+            font-size: 34pt;
+        }
+        tr:nth-child(odd) {
+            background-color: #6a879e;
+        }
+        .tdOdd{
+            background-color: #b4c4cf;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        .ahell{
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="banner">
+        <img src="./Bilder/Logo.png" alt="Logo" height="128px" width="128px">
+        <h1>Cranbon Gedis</h1>
+        <a href="main.html" class="banner-button">Home</a>
+        <a href="team.html" class="banner-button">Team</a>
+        <a href="impressum.html" class="banner-button">Impressum</a>
+        <a href="produkte.html" class="banner-button">Produkte</a>
+        <a href="kunden.html" class="banner-button">Kunden</a>
+    </div>
+    <h1>Team Members</h1>
+    <table>
+        <tr>
+            <th onclick="moreInfo('deiac')"><a class="ahell" >Gabriel Deiac</a></th>
+        </tr>
+        <tr>
+            <th onclick="moreInfo('forstner')"><a>Forstner Kevin</a></th>
+        </tr>
+        <tr>
+            <th onclick="moreInfo('berchti')"><a class="ahell">Laurenz Berchtold</a></th>
+        </tr>
+        <tr>
+            <th onclick="moreInfo('halbman')"><a >Julain Halbmayr</a></th>
+        </tr>
+    </table>
+    <div id="info"></div>
 </body>
 </html>
