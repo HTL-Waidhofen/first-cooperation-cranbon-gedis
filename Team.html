@@ -6,6 +6,7 @@
     <title>Gedi - Gabriel Deiac</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Bilder/icon.ico">
+    <script src="./script.js"></script>
     <style>
         table{
             border:5px solid rgb(161, 152, 72); 
@@ -37,7 +38,7 @@
     <div class="banner">
         <img src="./Bilder/Logo.png" alt="Logo" height="128px" width="128px">
         <h1>Cranbon Gedis</h1>
-        <a href="home.html" class="banner-button">Home</a>
+        <a href="main.html" class="banner-button">Home</a>
         <a href="team.html" class="banner-button">Team</a>
         <a href="impressum.html" class="banner-button">Impressum</a>
         <a href="produkte.html" class="banner-button">Produkte</a>
@@ -46,16 +47,16 @@
     <h1>Team Members</h1>
     <table>
         <tr>
-            <th><a href="" class="ahell" onclick="">Gabriel Deiac</a></th>
+            <th onclick="moreInfo('deiac')"><a class="ahell" >Gabriel Deiac</a></th>
         </tr>
         <tr>
-            <th><a href="">Forstner Kevin</a></th>
+            <th onclick="moreInfo('forstner')"><a>Forstner Kevin</a></th>
         </tr>
         <tr>
-            <th><a href="" class="ahell">Laurenz Berchtold</a></th>
+            <th onclick="moreInfo('berchti')"><a class="ahell">Laurenz Berchtold</a></th>
         </tr>
         <tr>
-            <th><a href="">Julain Halbmayr</a></th>
+            <th onclick="moreInfo('halbman')"><a >Julain Halbmayr</a></th>
         </tr>
     </table>
     <div id="info"></div>
