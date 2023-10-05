@@ -34,3 +34,12 @@ function loadJson(){
 function getJSONObj(){
     return data[rndNum()];
 }
+function loadJsonHTML(){
+    var txt="";
+    var jsn=getJSONObj();
+    console.log(jsn)
+    for (ob in jsn) {
+        txt+=ob+": " +jsn[ob]+"<br/>"
+    }
+    console.log(txt)
+}
