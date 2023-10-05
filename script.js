@@ -1,3 +1,4 @@
+var data;
 function moreInfo(event){
     let info="";
     switch(event){
@@ -15,4 +16,15 @@ function moreInfo(event){
             break;
     }
     document.getElementById("info").innerHTML=info;
+}
+function loadJson(){
+    var obj = new XMLHttpRequest();
+    obj.open('GET', "./recipes.json", true); 
+    obj.onreadystatechange = function () {
+    if (obj.readyState == "4" && obj.status == '200') {
+            data=JSON.parse(obj.responseText);
+            console.log(data);
+        }
+    };
+    obj.send(null);  
 }
