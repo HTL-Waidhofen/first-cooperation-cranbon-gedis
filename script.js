@@ -39,7 +39,7 @@ function loadJsonHTML(){
     var jsn=getJSONObj();
     console.log(jsn)
     for (ob in jsn) {
-        txt+=ob+": " +jsn[ob]+"<br/>"
+        txt+=ob+": "+jsn[ob]+"<br/><br/>gigt"
     }
-    console.log(txt)
+    document.getElementById("recipe").innerHTML=txt;
 }
