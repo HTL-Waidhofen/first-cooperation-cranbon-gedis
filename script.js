@@ -18,7 +18,7 @@ function moreInfo(event){
     document.getElementById("info").innerHTML=info;
 }
 function rndNum(){
-    var rndNumber = Math.floor(Math.random() * 1617) + 1;
+    return Math.floor(Math.random() * 1617) + 1;
 }
 function loadJson(){
     var obj = new XMLHttpRequest();
@@ -30,4 +30,7 @@ function loadJson(){
         }
     };
     obj.send(null);  
+}
+function getJSONObj(){
+    return data[rndNum()];
 }
